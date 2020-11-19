@@ -1,6 +1,6 @@
 # mc-user
 [![Latest Release](https://img.shields.io/github/v/release/Ubunfu/mc-user)](https://github.com/Ubunfu/mc-user/releases)
-[![codecov](https://codecov.io/gh/Ubunfu/mc-user/branch/master/graph/badge.svg?token=u6O5o3QNih)](https://codecov.io/gh/Ubunfu/mc-user)
+[![codecov](https://codecov.io/gh/Ubunfu/mc-user/branch/master/graph/badge.svg?token=41OYQX1DGV)](https://codecov.io/gh/Ubunfu/mc-user)
 [![CircleCI](https://img.shields.io/circleci/build/github/Ubunfu/mc-user?logo=circleci)](https://app.circleci.com/pipelines/github/Ubunfu/mc-user)
 ![Contrubutors](https://img.shields.io/github/contributors/Ubunfu/mc-user?color=blue)
 ![Last Commit](https://img.shields.io/github/last-commit/Ubunfu/mc-user)
