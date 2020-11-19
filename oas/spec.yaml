@@ -1,0 +1,59 @@
+openapi: 3.0.1
+info:
+  title: Mc-User
+  version: 1.0.0
+externalDocs:
+  description: View on GitHub
+  url: https://github.com/Ubunfu/mc-user
+tags:
+- name: user
+  description: User Operations
+paths:
+  /user:
+    get:
+      tags:
+        - user
+      summary: Retrieve username information 
+      operationId: getUser
+      parameters: 
+        - name: discordUser
+          in: query
+          description: URL-encoded username of a Discord account
+          required: false
+          schema:
+            type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResp'
+        404:
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResp'
+        500:
+          description: Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResp'
+components:
+  schemas:
+    UserResp:
+      type: object
+      properties:
+        discordUser: 
+          type: string
+        minecraftUser:
+          type: string
+    ErrorResp:
+      type: object
+      properties:
+        error:
+          type: string
+        errorDetail:
+          type: string

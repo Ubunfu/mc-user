@@ -1,0 +1,29 @@
+{
+  "name": "mc-user",
+  "version": "0.1.0",
+  "description": "Maintains and provides access to Discord usernames and Minecraft usernames",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nyc mocha --recursive test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ubunfu/mc-user.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ubunfu/mc-user/issues"
+  },
+  "homepage": "https://github.com/Ubunfu/mc-user#readme",
+  "dependencies": {
+    "aws-sdk": "^2.796.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.1"
+  }
+}
