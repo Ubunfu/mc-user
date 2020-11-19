@@ -4,7 +4,8 @@
   "description": "Maintains and provides access to Discord usernames and Minecraft usernames",
   "main": "src/index.js",
   "scripts": {
-    "test": "nyc mocha --recursive test/"
+    "test": "nyc mocha --recursive test/",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "repository": {
     "type": "git",
