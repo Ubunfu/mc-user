@@ -1,0 +1,19 @@
+@startuml sequence_get-user
+
+title Sequence: Get User
+
+collections McSteve
+collections McUser
+database Users
+
+McSteve -> McUser: GET /user (discordId)
+McUser -> Users: get(discordId)
+alt user found
+    McUser <-- Users: user(discordId,minecraftId)
+    McSteve <-- McUser: HTTP 200
+else user not found
+    McUser <-- Users: (empty)
+    McSteve <-- McUser: HTTP 404
+end
+
+@enduml
