@@ -15,7 +15,7 @@ provider:
     LOGGER_ENABLED: true
 
 functions:
-  mc-wallet:
+  mc-user:
     handler: src/index.handler
     events:
       - httpApi:
