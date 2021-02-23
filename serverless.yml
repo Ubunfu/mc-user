@@ -11,8 +11,10 @@ provider:
   region: us-east-1
   role: arn:aws:iam::425071954352:role/service-role/mc-microservice-role
   environment:
-    TABLE_USERS: users
     LOGGER_ENABLED: true
+    TABLE_USERS:
+      Ref:
+        - UserDatabase
 
 functions:
   mc-user:
@@ -21,3 +23,16 @@ functions:
       - httpApi:
           path: /user
           method: get
+
+resources:
+  Resources:
+    UserDatabase:
+      Type: "AWS::DynamoDB::Table"
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: "discordUser"
+            AttributeType: "S"
+        KeySchema:
+          - AttributeName: "discordUser"
+            KeyType: "HASH"
+        BillingMode: "PAY_PER_REQUEST"
