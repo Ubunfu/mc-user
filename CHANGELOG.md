@@ -1,6 +1,9 @@
 # Changelog
 This project attempts to conform to [SemVer](https://semver.org/) guidelines whenever possible.
 
+## [v1.0.0]
+* [Adding db to serverless stack](https://github.com/Ubunfu/mc-user/pull/5)
+
 ## [v0.2.1]
 * [Fixing broken function name in serverless config](https://github.com/Ubunfu/mc-user/pull/4)
 

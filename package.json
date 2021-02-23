@@ -1,6 +1,6 @@
 {
   "name": "mc-user",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Maintains and provides access to Discord usernames and Minecraft usernames",
   "main": "src/index.js",
   "scripts": {
